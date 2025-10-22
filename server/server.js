@@ -33,6 +33,20 @@ db.run(`
   )
 `);
 
+app.get("/api/games", (req, res) => {
+  db.all(
+    "SELECT * FROM games ORDER BY created_at DESC LIMIT 20",
+    [],
+    (err, rows) => {
+      if (err) {
+        res.status(500).json({ error: err.message });
+        return;
+      }
+      res.json(rows);
+    }
+  );
+});
+
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 });
