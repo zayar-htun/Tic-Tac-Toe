@@ -23,6 +23,16 @@ const db = new sqlite3.Database("./tictactoe.db", (err) => {
   }
 });
 
+db.run(`
+  CREATE TABLE IF NOT EXISTS games (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player1 TEXT NOT NULL,
+    player2 TEXT NOT NULL,
+    winner TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
+`);
+
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 });
