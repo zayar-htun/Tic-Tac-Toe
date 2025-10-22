@@ -15,6 +15,14 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
+const db = new sqlite3.Database("./tictactoe.db", (err) => {
+  if (err) {
+    console.error("Database error:", err);
+  } else {
+    console.log("Connected to SQLite database");
+  }
+});
+
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 });
