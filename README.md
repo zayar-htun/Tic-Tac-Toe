@@ -1,4 +1,4 @@
-# 🎮 TicTacToe – Real-Time Multiplayer Game
+#  TicTacToe – Real-Time Multiplayer Game
 
 A full-stack Tic-Tac-Toe application built using **Node.js (Express + Socket.IO)** for the backend and **React (Vite + MUI)** for the frontend.  
 It enables **real-time multiplayer gameplay**, **matchmaking**,**nickname**,**active user**, **game history (SQLite)**, and **rejoin persistence** via `localStorage`.
@@ -7,7 +7,7 @@ It enables **real-time multiplayer gameplay**, **matchmaking**,**nickname**,**ac
 
 
 
-## ⚙️ Setup Requirements
+##  Setup Requirements
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ It enables **real-time multiplayer gameplay**, **matchmaking**,**nickname**,**ac
 
 ---
 
-## 📁 Environment Variables
+##  Environment Variables
 
 ### `server/.env`
 
@@ -35,7 +35,7 @@ VITE_SOCKET_URL=http://localhost:3001
 
 ---
 
-## 🚀 Setup & Run
+##  Setup & Run
 
 From the root folder:
 
@@ -57,15 +57,14 @@ Open two browser tabs or share the URL with another player to test multiplayer f
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint     | Description                 |
-| ------ | ------------ | --------------------------- |
 | GET    | `/api/games` | Fetches the latest 20 games |
 
 ---
 
-## ⚡ Socket.IO Events
+##  Socket.IO Events
 
 ### Client → Server
 
@@ -87,7 +86,7 @@ Open two browser tabs or share the URL with another player to test multiplayer f
 
 ---
 
-## 🧠 Walkthrough
+##  Walkthrough
 
 ### Backend (`server/`)
 
@@ -118,10 +117,9 @@ Open two browser tabs or share the URL with another player to test multiplayer f
 
 ---
 
-## 🧱 Technical Decisions
+##  Technical Decisions
 
 | Aspect               | Choice                | Reason                                |
-| -------------------- | --------------------- | ------------------------------------- |
 | **Database**         | SQLite                | Lightweight and easy for demos        |
 | **Realtime**         | Socket.IO             | Simplicity and built-in reconnection  |
 | **Frontend Tooling** | Vite                  | Fast and modern dev server            |
@@ -131,7 +129,7 @@ Open two browser tabs or share the URL with another player to test multiplayer f
 
 ---
 
-## 🪶 .gitignore
+##  .gitignore
 
 ```gitignore
 node_modules/
@@ -145,7 +143,7 @@ client/dist/
 
 ---
 
-## 🧰 Optional Docker Setup
+## Optional Docker Setup
 
 ```yaml
 version: "3.9"
@@ -187,10 +185,9 @@ Then visit [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 | Problem                   | Solution                                                |
-| ------------------------- | ------------------------------------------------------- |
 | **CORS Error**            | Ensure both `.env` URLs match exactly                   |
 | **Socket Not Connecting** | Check `VITE_SOCKET_URL` and server port                 |
 | **DB Missing**            | Server auto-creates `tictactoe.db`; ensure write access |
