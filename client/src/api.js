@@ -1,6 +1,7 @@
 export async function getGames() {
   try {
-    const res = await fetch("http://localhost:3001/api/games");
+    const baseUrl = import.meta.env.VITE_SOCKET_URL;
+    const res = await fetch(`${baseUrl}/api/games`);
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
