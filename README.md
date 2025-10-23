@@ -1,7 +1,7 @@
 # TicTacToe – Real-Time Multiplayer Game
 
 A full-stack Tic-Tac-Toe application built using **Node.js (Express + Socket.IO)** for the backend and **React (Vite + MUI)** for the frontend.  
-It enables **real-time multiplayer gameplay**, **matchmaking**,**nickname**,**active user**, **game history (SQLite)**, and **rejoin persistence** via `localStorage`.
+It enables **real-time multiplayer gameplay**, **matchmaking**,**nickname**,**active user** and **game history (SQLite)**.
 
 ---
 
