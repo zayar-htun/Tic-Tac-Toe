@@ -19,7 +19,7 @@ import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import BalanceIcon from "@mui/icons-material/Balance";
 
-const BOARD_BG = "rgba(37,27,37,1)";  
+const BOARD_BG = "rgba(61, 61, 61, 1)";  
 const GOLD = "#FFD700"; 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
